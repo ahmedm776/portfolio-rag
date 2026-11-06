@@ -1,0 +1,9 @@
+scikit-learn>=1.3
+scipy
+numpy
+fastapi
+uvicorn
+pydantic
+pytest
+# optional, only for the experimental LLM compose path (src/generator.py):
+# torch  transformers  sentencepiece
