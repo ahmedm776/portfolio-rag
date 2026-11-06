@@ -25,7 +25,7 @@ for the scratch model.
 
 ## CURRENT ADDENDA (2026-11-05)
 
-A re-run of the same notebook procedure scored 96.51% on the full official 10,000-image MNIST test set (95.84% on the first 5,700 test images, 97.395% on the remaining tail). The original exposure of the other test images during development is not documented, so this is not an independent confirmation, and the package ships no saved original weights. A matched ten-seed comparison on the same split and the 10,000-image test set gave 96.26% (sd 0.11) for the from-scratch NumPy network and 96.25% (sd 0.11) for Keras with the matched setup. Keras with an Adam recipe gave 94.78%. The gradient check covers tiny random networks only.
+A re-run of the same notebook procedure scored 96.51% on the full official 10,000-image MNIST test set (95.84% on the first 5,700 test images, 97.395% on the remaining tail). The original exposure of the other test images during development is not documented, so this is not an independent confirmation, and the public package ships frozen NumPy weights instantiated by repeating the deterministic notebook procedure (not proven bit-identical to the historical original weights). A matched ten-seed comparison on the same split and the 10,000-image test set gave 96.26% (sd 0.11) for the from-scratch NumPy network and 96.25% (sd 0.11) for Keras with the matched setup. Keras with an Adam recipe gave 94.78%. The gradient check covers tiny random networks only.
 
 ## Fix applied during packaging (documented, not hidden)
 

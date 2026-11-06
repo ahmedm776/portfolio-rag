@@ -12,9 +12,7 @@ and not claimed as Ahmed's unaided original code. The original is preserved unch
 Tested 2026-11-04 on Python 3.10. Public mirror input: 9,999 rows, 9 columns.
 Mirror: https://joannabieri.com/mathdatascience/data/movies.csv
 Candidate dataset source: https://www.kaggle.com/datasets/bharatnatrayn/movies-dataset-for-feature-extracion-prediction
-The mirror matches the saved notebook's schema, shape and first records, but is NOT
-byte-verified against the original coursework CSV. Findings are for this
-mirror. Dataset rights were not established; no CSV, row-level outputs or full
+The public project provenance records byte-verified SHA-256 identity between the mirror and the original coursework CSV; findings apply to that dataset. Dataset rights were not established; no CSV, row-level outputs or full
 profiling HTML is redistributed here. The generated profile was visually inspected.
 
 ## Conservative portfolio default
