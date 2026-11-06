@@ -29,9 +29,12 @@ using the HARD balanced dataset (Elnagar, Khalifa & Einea, 2018).
 6. Limitations stated plainly: reviews are from 2016 Booking.com hotels; the label
    is derived from star ratings; single frozen split, no cross-validation claim.
 
-## CURRENT RESULTS (2026-11-05)
+## CURRENT RESULTS (cleaned evaluation)
 
-A fresh full training run on 22,396 reviews after removing duplicates reached 94.6% accuracy, F1 0.948 and AUC 0.983, with 5 tests passing. The number is measured on the same test set used during development (benchmark reuse, not a new independent confirmation).
+After removing label-leaking rating words and cleaning duplicates, accuracy is
+88.06%, F1 0.8843 and AUC 0.9458. The earlier 94.62% result was inflated by
+label leakage and is withdrawn, not a current result. This reused development
+benchmark is not an independent confirmation.
 
 ## Layout
 - `src/prepare.py` - load, normalize, label, group-split; writes data/train.pkl, data/test.pkl
